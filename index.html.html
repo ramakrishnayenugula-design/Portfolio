@@ -156,7 +156,7 @@ section{
 }
 .hero-name{
   font-family:'Syne',sans-serif;
-  font-size:clamp(3rem,9vw,7.5rem);
+  font-size:clamp(2.2rem,6.5vw,5.5rem);
   font-weight:800;
   line-height:0.95;
   letter-spacing:-0.02em;
@@ -692,6 +692,30 @@ section{
 }
 @keyframes avatarFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
+/* ===== PROJECT TECH TAGS ===== */
+.project-tags{
+  display:flex;flex-wrap:wrap;gap:8px;
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+}
+.project-tag{
+  font-family:'Space Mono',monospace;
+  font-size:0.62rem;
+  letter-spacing:0.08em;
+  padding:4px 11px;
+  border-radius:99px;
+  border:1px solid var(--border);
+  color:var(--text2);
+  background:var(--surface2);
+  transition:border-color 0.25s,color 0.25s,background 0.25s;
+}
+.project-card:hover .project-tag{
+  border-color:rgba(0,212,255,0.35);
+  color:var(--accent);
+  background:rgba(0,212,255,0.06);
+}
+
 /* ===== FOOTER ===== */
 footer{
   text-align:center;
@@ -741,7 +765,7 @@ footer span{color:var(--accent)}
 <section id="hero">
   <div>
     <div class="hero-tag">// SOFTWARE ENGINEER — GENAI & PROMPT SPECIALIST</div>
-    <h1 class="hero-name">RAMA&shy;KRISHNA<br>YENUGULA</h1>
+    <h1 class="hero-name">RAMAKRISHNA YENUGULA</h1>
     <p class="hero-role">Building <span>Intelligent AI Systems</span> that understand your data</p>
     <p class="hero-desc">3+ years engineering enterprise-grade Generative AI applications at dSilo.ai. Expert in prompt design, LLM fine-tuning, and extracting structured insights from complex documents with 99%+ accuracy.</p>
     <div class="hero-btns">
@@ -912,6 +936,15 @@ footer span{color:var(--accent)}
           <li>Developed a Multi-Persona AI architecture differentiating between Company-led and Customer-led papers for logic-specific data extraction.</li>
           <li>Achieved 99.2% accuracy in critical obligation and renewal date identification using Chain-of-Thought (CoT) prompting strategy.</li>
         </ul>
+        <div class="project-tags">
+          <span class="project-tag">Azure OpenAI</span>
+          <span class="project-tag">Chain-of-Thought</span>
+          <span class="project-tag">Few-shot Prompting</span>
+          <span class="project-tag">Prompt Templates</span>
+          <span class="project-tag">MSA / SOW / NDA</span>
+          <span class="project-tag">JSON</span>
+          <span class="project-tag">Python</span>
+        </div>
       </div>
 
       <div class="project-card reveal">
@@ -921,6 +954,14 @@ footer span{color:var(--accent)}
           <li>Implemented Credit Memo adjustment logic against original spend data for real-time visibility into net expenditure and financial reconciliation.</li>
           <li>Optimized JSON-formatted outputs for seamless enterprise ERP system integration.</li>
         </ul>
+        <div class="project-tags">
+          <span class="project-tag">Azure OpenAI</span>
+          <span class="project-tag">Document Classification</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">JSON</span>
+          <span class="project-tag">ERP Integration</span>
+          <span class="project-tag">Invoices / POs</span>
+        </div>
       </div>
 
       <div class="project-card reveal">
@@ -929,6 +970,32 @@ footer span{color:var(--accent)}
           <li>Engineered AI-driven reconciliation tools to detect price gaps between negotiated contracts and actual paid invoice amounts.</li>
           <li>Utilized Azure AI Playground for cross-document reasoning to surface actionable insights for supplier negotiations.</li>
         </ul>
+        <div class="project-tags">
+          <span class="project-tag">Azure AI Playground</span>
+          <span class="project-tag">Cross-document Reasoning</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">SQL</span>
+          <span class="project-tag">Spend Analytics</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-title">🗂 Custom Table Extraction</div>
+        <ul class="project-bullets">
+          <li>Engineered prompt templates to extract pricing, discount, and structured tables from complex documents while preserving the original table format.</li>
+          <li>Developed logic to handle multiple tables, irregular layouts, and merged cells, ensuring accurate data extraction across contracts, invoices, and purchase orders.</li>
+          <li>Utilized Azure AI Studio to fine-tune prompts using few-shot and reasoning techniques, improving extraction accuracy and reducing errors.</li>
+          <li>Standardized extracted data into structured JSON format for seamless integration with downstream enterprise systems.</li>
+        </ul>
+        <div class="project-tags">
+          <span class="project-tag">Azure AI Studio</span>
+          <span class="project-tag">Few-shot Prompting</span>
+          <span class="project-tag">Reasoning Techniques</span>
+          <span class="project-tag">JSON</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Table Parsing</span>
+          <span class="project-tag">Prompt Fine-tuning</span>
+        </div>
       </div>
     </div>
   </div>
